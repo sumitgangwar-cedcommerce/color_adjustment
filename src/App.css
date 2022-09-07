@@ -1,0 +1,110 @@
+
+
+:root{
+  --contra : contrast(1);
+  --backColor : #dfdcdc;
+  --titleColor : black;
+  --textColor : rgb(92, 90, 90);
+  
+}
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  margin: 0;
+  /* border-bottom : solid 1px #eee; */
+}
+
+
+body {
+  background-color: var(--backColor) !important;
+}
+
+
+
+.main-div{
+  filter:var(--contra) !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px 30px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  filter:contrast(100%);
+}
+.title{
+  color: var(--titleColor);
+}
+.text{
+  color: var(--textColor);
+}
+.fixed{
+  position: fixed;
+  top:25%;
+  right: 0;
+  padding: 10px 40px 10px 10px;
+  background-color: steelblue;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer;
+}
+.colors{
+  display: flex;
+  column-gap: 10px;
+}
+.colors span{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border : 4px solid #cde5f3;
+}
+.colors span:hover{
+  border : 4px solid rgb(4, 4, 4);
+  /* transform: scale(1.1); */
+}
+.access{
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  padding: 10px 10px;
+  overflow-x: hidden;
+  background-color: #E6E8F2;
+}
+.text-color{
+  border: solid 2px white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 20px;
+  border-radius: 10px;
+  background-color: #cde5f3;
+  cursor: pointer;
+}
+.text-color:hover{
+  border: solid 2px steelblue;
+}
+hr{
+  border-top: 1px solid rgb(117, 117, 117);
+  width: 100%;
+}
+.adj-col{
+  width: 90%;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 10px;
+}
+.contra{
+  margin:0 !important;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 10px !important;
+}
